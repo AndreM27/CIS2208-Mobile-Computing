@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/menu_home"
+        android:textColor="@color/white"/>
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile"
+        android:textColor="@color/white"/>
+    <item
+        android:id="@+id/nav_subjects"
+        android:icon="@drawable/ic_subjects"
+        android:title="Subjects"
+        android:textColor="@color/white"/>
+
+</menu>

@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_800"
+    tools:context=".TimetableFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/black_800"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:columnCount="6"
+            app:rowCount="17">
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/mon"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Mon"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/tue"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Tue"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/wed"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Wed"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/thur"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Thu"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/fri"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Fri"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/t800"
+                android:layout_width="49dp"
+                android:layout_height="62dp"
+                android:ems="10"
+                android:text="8:00"
+                android:textColor="#FFFFFF" />
+
+
+
+            <ImageButton
+                android:id="@+id/b1x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b1x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b1x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b1x4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b1x5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <TextView
+                android:id="@+id/t900"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="9:00"
+                android:textColor="#FFFFFF" />
+
+
+            <ImageButton
+                android:id="@+id/b2x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b2x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b2x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b2x4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b2x5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <TextView
+                android:id="@+id/t1000"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="10:00"
+                android:textColor="#FFFFFF" />
+
+
+            <ImageButton
+                android:id="@+id/b3x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b3x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+
+            <ImageButton
+                android:id="@+id/b3x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b3x4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b3x5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <TextView
+                android:id="@+id/t1100"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="11:00"
+                android:textColor="#FFFFFF" />
+
+
+            <ImageButton
+                android:id="@+id/b4x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b4x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b4x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b4x4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b4x5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <TextView
+                android:id="@+id/t1200"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="12:00"
+                android:textColor="#FFFFFF" />
+
+
+            <ImageButton
+                android:id="@+id/b5x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b5x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b5x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b5x4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b5x5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <TextView
+                android:id="@+id/t1300"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="13:00"
+                android:textColor="#FFFFFF" />
+
+
+            <ImageButton
+                android:id="@+id/b6x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b6x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b6x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b6x4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b6x5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <TextView
+                android:id="@+id/t1400"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="14:00"
+                android:textColor="#FFFFFF" />
+
+
+            <ImageButton
+                android:id="@+id/b7x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b7x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b7x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b7x4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b7x5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <TextView
+                android:id="@+id/t1500"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="15:00"
+                android:textColor="#FFFFFF" />
+
+
+            <ImageButton
+                android:id="@+id/b8x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b8x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b8x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b8x4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b8x5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <TextView
+                android:id="@+id/t1600"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="16:00"
+                android:textColor="#FFFFFF" />
+
+
+            <ImageButton
+                android:id="@+id/b9x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b9x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b9x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b9x4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b9x5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <TextView
+                android:id="@+id/t1700"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="17:00"
+                android:textColor="#FFFFFF" />
+
+
+            <ImageButton
+                android:id="@+id/b10x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b10x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b10x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b10x4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b10x5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <TextView
+                android:id="@+id/t1800"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="18:00"
+                android:textColor="#FFFFFF" />
+
+
+            <ImageButton
+                android:id="@+id/b11x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b11x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b11x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b11x4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b11x5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <TextView
+                android:id="@+id/t1900"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="19:00"
+                android:textColor="#FFFFFF" />
+
+
+            <ImageButton
+                android:id="@+id/b12x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b12x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b12x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b12x4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b12x5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+            <TextView
+                android:id="@+id/t2000"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="20:00"
+                android:textColor="#FFFFFF" />
+            <ImageButton
+                android:id="@+id/b13x1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b13x2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b13x3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b13x4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+            <ImageButton
+                android:id="@+id/b13x5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1" />
+
+
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
